@@ -27,8 +27,8 @@ function convertToInternationalCurrencySystem(labelValue) {
 const fetchData = async (url, val) => {
   const params = {};
   const apiKey = await getApiKey();
-
-  params.api_key = apiKey;
+  console.log(apiKey);
+  params.api_key = apiKey.key;
   if (val) {
     params.query = val;
   }
@@ -41,7 +41,7 @@ const fetchData = async (url, val) => {
 };
 
 async function getApiKey() {
-  axios
+  return axios
     .get("/api/themoviekey")
     .then(({ data }) => data)
     .catch((error) => console.log(error));
