@@ -1,14 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"
+    />
+    <!-- <link rel="stylesheet" href="style.css" /> -->
   </head>
   <body>
-    <ul>
-      <li><a href="/timer/index.html">Timer</a></li>
-    </ul>
+    <section class="hero is-link">
+      <div class="hero-body">
+        <p class="title">Javascript Only</p>
+        <p class="subtitle">
+          The following projets are done with vanilla Javascript. Any libraries
+          required.
+        </p>
+      </div>
+    </section>
+    <section class="section">
+      <div class="columns is-multiline">
+        <div class="column is-one-quarter">
+          <div class="card">
+            <div class="card-content">
+              <p class="title">Timer</p>
+              <p class="subtitle">Stopclock made with SVG</p>
+              <ul>
+                <li><strong>SVG Drawing</strong></li>
+                <li><strong> Class Declaration</strong></li>
+              </ul>
+            </div>
+            <footer class="card-footer">
+              <a href="/timer/index.html" class="card-footer-item">View</a>
+              <a
+                href="https://github.com/xtophe02/javascript-only"
+                target="_blank"
+                class="card-footer-item"
+                >GitHub</a
+              >
+            </footer>
+          </div>
+        </div>
+        <div class="column is-one-quarter">
+          <div class="card">
+            <div class="card-content">
+              <p class="title">Fight movies</p>
+              <p class="subtitle">Compare two movies</p>
+              <ul>
+                <li>
+                  <strong>Debounced function</strong> inserts a delay while
+                  typing
+                </li>
+                <li>
+                  <strong>Organization</strong> code re-used to fetch 2x movies
+                </li>
+              </ul>
+            </div>
+            <footer class="card-footer">
+              <a href="/movies/index.html" class="card-footer-item">View</a>
+              <a
+                href="https://github.com/xtophe02/javascript-only"
+                target="_blank"
+                class="card-footer-item"
+                >GitHub</a
+              >
+            </footer>
+          </div>
+        </div>
+        <div class="column is-one-quarter">
+          <div class="card">
+            <div class="card-content">
+              <p class="title">More to come...</p>
+              <p class="subtitle">Christophe Moreira</p>
+            </div>
+            <footer class="card-footer">
+              <a
+                href="https://www.christophemoreira.com"
+                class="card-footer-item"
+                >View</a
+              >
+              <a
+                href="https://github.com/xtophe02/javascript-only"
+                target="_blank"
+                class="card-footer-item"
+                >GitHub</a
+              >
+            </footer>
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
