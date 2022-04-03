@@ -1,4 +1,4 @@
-[api]
+[functions]
   directory = "api"
 
 [[redirects]]
