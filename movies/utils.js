@@ -27,7 +27,7 @@ function convertToInternationalCurrencySystem(labelValue) {
 const fetchData = async (url, val) => {
   const params = {};
   const apiKey = await getApiKey();
-  console.log(apikey);
+
   params.api_key = apiKey;
   if (val) {
     params.query = val;
