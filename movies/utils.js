@@ -26,8 +26,9 @@ function convertToInternationalCurrencySystem(labelValue) {
 //https://api.themoviedb.org/3/movie/343611?api_key={api_key}
 const fetchData = async (url, val) => {
   const params = {};
-
-  params.api_key = getApiKey();
+  const apiKey = await getApiKey();
+  console.log(apikey);
+  params.api_key = apiKey;
   if (val) {
     params.query = val;
   }
