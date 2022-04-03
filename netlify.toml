@@ -1,0 +1,7 @@
+[api]
+  directory = "api"
+
+[[redirects]]
+  from = "/api/*"
+  to = "/.netlify/api/:splat"
+  status = 200
